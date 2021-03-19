@@ -1,0 +1,61 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  background-color: salmon;
+  background: linear-gradient(to right,#e50c5f, #1da8d3);/*#21C08B, #AB88FF*/
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  color: white;
+  padding: 10px;
+}
+
+
+body {
+  width: 100%;
+}
+
+main {
+  width: 100%;
+}
+
+footer {
+  width: 100%;
+}
+
+header.titlePage {
+  display: flex;
+  justify-content: center
+}
+
+header.breadCrumbs {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+.imgKael {
+  border-radius: 10%;
+}
+
+.AboutMe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.socialMedia {
+  display: flex;
+  flex-direction: row;
+}
+
+.socialMedia a {
+  color: white;
+}
