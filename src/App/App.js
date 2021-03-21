@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import imgKael from '../assets/img_kael.png';
+import Footer from '../Footer/Footer';
 
 
 export default class App extends Component {
@@ -13,16 +14,15 @@ export default class App extends Component {
 
     return (
       <div className="App">
-        <navbar>
-          <img classNAme="notificationButton" alt="Notification Button" src="" />
+        <nav>
+          <img className="notificationButton" alt="Notification Button" src="" />
           <ul>
             <li>
               This website looks simple because it is under construction, i have hardly had time to work on this page.
             </li>
           </ul>
-
-        </navbar>
-        <header className="titlePage">
+        </nav>
+        <header className="titleWebsite">
           <h1>Kael website</h1>
         </header>
         <main>
@@ -33,9 +33,9 @@ export default class App extends Component {
             <h2>About Me</h2>
             <img src={imgKael} className="imgKael" alt="image of myself" />
             <div className="socialMedia">
-              <a href="https://www.linkedin.com/in/kaelwebdev/"><img classNAme="socialMedia_icon" alt="linkedIn" src="" /></a>
-              <a href="https://github.com/kaelwebdev"><img classNAme="socialMedia_icon" alt="Github" src="" /></a>
-              <a href="https://twitter.com/kaelwebdev"><img classNAme="socialMedia_icon" alt="Twitter" src="" /></a>
+              <a href="https://www.linkedin.com/in/kaelwebdev/"><img className="socialMedia_icon" alt="linkedIn" src="" /></a>
+              <a href="https://github.com/kaelwebdev"><img className="socialMedia_icon" alt="Github" src="" /></a>
+              <a href="https://twitter.com/kaelwebdev"><img className="socialMedia_icon" alt="Twitter" src="" /></a>
             </div>
             <p>
               Hi! My name is Carlos Daniel Cortez, but you can call me Kael. I am Mulimedia Engineer, Software Engineer, and Full Stack Web Developer.
@@ -67,11 +67,7 @@ export default class App extends Component {
             <form></form>
           </section>
         </main>
-        <footer>
-          <p>
-            This page is protected under license CC BY-NC-SA 4.0. You can read more in https://creativecommons.org/licenses/by-nc-sa/4.0/
-          </p>
-        </footer>
+        <Footer/>
       </div>
     );
   }
