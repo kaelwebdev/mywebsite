@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './Home.css';
 import imgKael from '../assets/img_kael.png';
 import { useForm, ValidationError } from '@formspree/react';
+import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 
 function ContactForm() {
@@ -50,11 +51,11 @@ export default class Home extends Component {
           </header>
           <section className="AboutMe">
             <h2>About Me</h2>
-            <img src={imgKael} className="imgKael" alt="image of myself" />
+            <img src={imgKael} className="imgKael" />
             <div className="socialMedia">
-              <a href="https://www.linkedin.com/in/kaelwebdev/"><img className="socialMedia_icon" alt="linkedIn" src="" /></a>
-              <a href="https://github.com/kaelwebdev"><img className="socialMedia_icon" alt="Github" src="" /></a>
-              <a href="https://twitter.com/kaelwebdev"><img className="socialMedia_icon" alt="Twitter" src="" /></a>
+              <a href="https://www.linkedin.com/in/kaelwebdev/"><FaLinkedin title="LinkedIn" className="socialMedia__icon"/></a>
+              <a href="https://github.com/kaelwebdev"><FaGithub title="Github" className="socialMedia__icon" /></a>
+              <a href="https://twitter.com/kaelwebdev"><FaTwitter title="Twitter" className="socialMedia__icon" /></a>
             </div>
             <p>
               Hi! My name is Carlos Daniel Cortez, but you can call me Kael. I am Mulimedia Engineer, Software Engineer, and Full Stack Web Developer.
@@ -96,7 +97,57 @@ export default class Home extends Component {
           <section className="Portfolio">
             <h1>Portfolio </h1>
             <p>I present you some of my projects. You can change the display mode (table/cards)</p>
-            <div className="Portafiloio_tableMode"></div>
+            <div className="Portafiloio_tableMode">
+            <table className="table is-hoverable is-fullwidth">
+  <thead>
+    <tr>
+      <th><abbr title="Position">Idx</abbr></th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tfoot>
+    <tr>
+      <th><abbr title="Position">Idx</abbr></th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </tfoot>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td><a href="https://github.com/kaelwebdev/Oharasis" title="Oharasis">Oharasis</a></td>
+      <td>Web platform for displaying and monitoring student competences and skills.</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td><a href="https://github.com/JamesPagani/MyCoachApp" title="My Coach App">My Coach App</a></td>
+      <td>Web platform for physical trainers and their clients. Manage or watch your routines.</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td><a href="https://github.com/kaelwebdev/AirBnB_clone" title="My Coach App">AirBnB clone - Console</a></td>
+      <td>Replica of the famous AirBnb application. It consists of 5 phases. In this first phase, a system was created to manage the application through the command terminal.</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Secure Chat</td>
+      <td>Encrypted chat for internal company use.</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td><a href="https://github.com/JamesPagani/MyCoachApp" title="My Coach App">3D Object Grapher</a></td>
+      <td>Small projects that i did a long time ago using graphics computing.</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td><a href="https://github.com/kaelwebdev/MediaPlayer" title="My Coach App">Media player</a></td>
+      <td>My own media player using javascript</td>
+    </tr>
+    
+  </tbody>
+</table>
+            </div>
             <div className="Portafiloio_cardMode"></div>
           </section>
           <section className="myCurriculumVitae">
