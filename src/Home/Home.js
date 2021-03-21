@@ -46,7 +46,7 @@ function ContactForm() {
         field="message"
         errors={state.errors}
       />
-      <div className="g-recaptcha" data-sitekey="6LdBG4kaAAAAAHzf-hUuK1yZ7UZvu-CoYtabC17N"></div>
+      <div className="g-recaptcha my-6" data-sitekey="6LdBG4kaAAAAAHzf-hUuK1yZ7UZvu-CoYtabC17N"></div>
       <button type="submit" disabled={state.submitting}>
         Submit
       </button>
