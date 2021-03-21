@@ -62,6 +62,36 @@ export default class Home extends Component {
             <p>
               I am passionate about everything related to web development. And I like the frontend and the backend alike.
             </p>
+            <div className="tags">
+              <span className="tag is-light">React</span>
+              <span className="tag is-light">Angular</span>
+              <span className="tag is-light">NodeJS</span>
+              <span className="tag is-light">Javascript</span>
+              <span className="tag is-light">CSS</span>
+              <span className="tag is-light">HTML</span>
+              <span className="tag is-light">Typescript</span>
+              <span className="tag is-light">DJango</span>
+              <span className="tag is-light">Python</span>
+              <span className="tag is-light">MongoDB</span>
+              <span className="tag is-light">Firebase</span>
+              <span className="tag is-light">Shell</span>
+              <span className="tag is-light">C</span>
+              <span className="tag is-light">C#</span>
+              <span className="tag is-light">SQL</span>
+              <span className="tag is-light">Express</span>
+              <span className="tag is-light">Flask</span>
+              <span className="tag is-light">Redis</span>
+              <span className="tag is-light">Boostrap</span>
+              <span className="tag is-light">Bulma</span>
+              <span className="tag is-light">Figma</span>
+              <span className="tag is-light">Unity</span>
+              <span className="tag is-light">Matlab</span>
+              <span className="tag is-light">Wordpress</span>
+              <span className="tag is-light">Adobe</span>
+              <span className="tag is-light">3DMax</span>
+              <span className="tag is-light">PHP</span>
+              <span >and more...</span>
+            </div>
           </section>
           <section className="Portfolio">
             <h1>Portfolio </h1>
@@ -78,7 +108,7 @@ export default class Home extends Component {
           <section className="Contact">
             <h2>Contact</h2>
             <p>
-              For security reasons I do not show my email and phone number. But if you check my CV there you can find that data.
+              For security reasons i do not show my email and phone number. But if you check my CV there you can find that data.
             </p>
             <p>
               You can also send me an email directly using this form:

@@ -13,6 +13,8 @@ h2 {
 
 .imgKael {
   border-radius: 10%;
+  width: 100%;
+  max-width: 300px;
 }
 
 .AboutMe {
@@ -82,4 +84,9 @@ button[type="submit"]:hover {
   text-shadow: white 0 0 10px;
   box-shadow: white 0 0 10px;
   cursor: pointer;
+}
+
+.tags {
+  max-width: 500px;
+  padding: 5px 0px;
 }
