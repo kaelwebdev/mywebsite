@@ -57,7 +57,7 @@ const ScrollIndicator = () => {
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll)
   }, []);
-  return (<progress className="progress is-small stickyBar" value={scrollTop} max="100">15%</progress>);
+  return (<progress className="progress is-small stickyBar" value={scrollTop} max="100"></progress>);
 }
 
 
@@ -74,16 +74,21 @@ export default class Home extends Component {
           <h2>About Me</h2>
           <img src={imgKael} className="imgKael" />
           <div className="socialMedia">
-            <a target="_blank" href="https://www.linkedin.com/in/kaelwebdev/"><FaLinkedin title="LinkedIn" className="socialMedia__icon" /></a>
-            <a target="_blank" href="https://github.com/kaelwebdev"><FaGithub title="Github" className="socialMedia__icon" /></a>
-            <a target="_blank" href="https://twitter.com/kaelwebdev"><FaTwitter title="Twitter" className="socialMedia__icon" /></a>
+            <a target="_blank" href="https://www.linkedin.com/in/kaelwebdev/">
+              <FaLinkedin title="LinkedIn" className="socialMedia__icon" /></a>
+            <a target="_blank" href="https://github.com/kaelwebdev">
+              <FaGithub title="Github" className="socialMedia__icon" /></a>
+            <a target="_blank" href="https://twitter.com/kaelwebdev">
+              <FaTwitter title="Twitter" className="socialMedia__icon" /></a>
           </div>
           <p>
-            Hi! My name is Carlos Daniel Cortez, but you can call me Kael. I am Mulimedia Engineer, Software Engineer, and Full Stack Web Developer.
-            </p>
+            Hi! My name is Carlos Daniel Cortez, but you can call me Kael. I am Mulimedia Engineer, 
+            Software Engineer, and Full Stack Web Developer.
+          </p>
           <p>
-            I am passionate about everything related to web development. And I like the frontend and the backend alike.
-            </p>
+            I am passionate about everything related to web development. And I like the frontend and 
+            the backend alike.
+          </p>
           <div className="tags">
             <span className="tag is-light">React</span>
             <span className="tag is-light">Angular</span>
@@ -140,23 +145,39 @@ export default class Home extends Component {
               <tbody>
                 <tr>
                   <th>1</th>
-                  <td><a target="_blank" href="https://github.com/kaelwebdev/Oharasis" title="Oharasis">Oharasis</a></td>
+                  <td>
+                    <a target="_blank" href="https://github.com/kaelwebdev/Oharasis" title="Oharasis">
+                      Oharasis
+                    </a>
+                  </td>
                   <td>Web platform for displaying and monitoring student competences and skills.</td>
-                  <td className="has-text-centered"><a target="_blank" href="https://drive.google.com/file/d/1rSq6nrCUELe-vkVTu7MbEuZaNs648pJI/view" title="sample"><FaExternalLinkAlt /></a></td>
+                  <td className="has-text-centered"><a target="_blank"
+                    href="https://drive.google.com/file/d/1rSq6nrCUELe-vkVTu7MbEuZaNs648pJI/view"
+                    title="sample"><FaExternalLinkAlt /></a>
+                  </td>
                 </tr>
                 <tr>
                   <th>2</th>
-                  <td><a target="_blank" href="https://github.com/JamesPagani/MyCoachApp" title="My Coach App">
-                    My Coach App</a></td>
-                  <td>Web platform for physical trainers and their clients. Manage or watch your routines.</td>
-                  <td className="has-text-centered"><a target="_blank" href="https://drive.google.com/uc?export=view&id=12R-xLXRUq0O6ghuoycoEsuSMYSMQdtxR" alt="screenshot App" width="300" title="sample"><FaExternalLinkAlt /></a></td>
+                  <td>
+                    <a target="_blank" href="https://github.com/JamesPagani/MyCoachApp"
+                    title="My Coach App">
+                    My Coach App</a>
+                  </td>
+                  <td>Web platform for physical trainers and their clients. Manage or watch your
+                     routines.</td>
+                  <td className="has-text-centered">
+                    <a target="_blank" href="https://drive.google.com/uc?export=view&id=12R-xLXRUq0O
+                    6ghuoycoEsuSMYSMQdtxR" alt="screenshot App" width="300" title="sample">
+                      <FaExternalLinkAlt /></a></td>
                 </tr>
                 <tr>
                   <th>3</th>
-                  <td><a target="_blank" href="https://github.com/kaelwebdev/AirBnB_clone" title="My Coach App">
-                    AirBnB clone - Console</a>
+                  <td><a target="_blank" href="https://github.com/kaelwebdev/AirBnB_clone" 
+                    title="My Coach App">AirBnB clone - Console</a>
                   </td>
-                  <td>Replica of the famous AirBnb application. It consists of 5 phases. In this first phase, a system was created to manage the application through the command terminal.</td>
+                  <td>Replica of the famous AirBnb application. It consists of 5 phases. 
+                    In this first phase, a system was created to manage the application through 
+                    the command terminal.</td>
                   <td className="has-text-centered"></td>
                 </tr>
                 <tr>
@@ -167,13 +188,17 @@ export default class Home extends Component {
                 </tr>
                 <tr>
                   <th>5</th>
-                  <td><a target="_blank" href="https://github.com/JamesPagani/3D-web-object-grapher" title="My Coach App">3D Object Grapher</a></td>
+                  <td><a target="_blank" href="https://github.com/JamesPagani/3D-web-object-grapher"
+                    title="My Coach App">3D Object Grapher</a></td>
                   <td>Small projects that i did a long time ago using graphics computing.</td>
-                  <td className="has-text-centered"><a target="_blank" href="https://drive.google.com/uc?export=view&id=1gtMAX4jFLV6n8jt-6F65SYHVSq15YqF_" title="sample"><FaExternalLinkAlt /></a></td>
+                  <td className="has-text-centered"><a target="_blank" 
+                  href="https://drive.google.com/uc?export=view&id=1gtMAX4jFLV6n8jt-6F65SYHVSq15YqF_" 
+                  title="sample"><FaExternalLinkAlt /></a></td>
                 </tr>
                 <tr>
                   <th>6</th>
-                  <td><a target="_blank" href="https://github.com/kaelwebdev/MediaPlayer" title="My Coach App">Media player</a></td>
+                  <td><a target="_blank" href="https://github.com/kaelwebdev/MediaPlayer" 
+                    title="My Coach App">Media player</a></td>
                   <td>My own media player using javascript</td>
                   <td className="has-text-centered"></td>
                 </tr>
@@ -183,14 +208,17 @@ export default class Home extends Component {
         </section>
         <section className="myCurriculumVitae section is-medium">
           <h2>My CV (Curriculum Vitae)</h2>
-          <a href="https://www.figma.com/proto/8D9aFE2LFb9D2V1QqGgqcL/CV?node-id=1:3&scaling=min-zoom">See my resume </a>
-          <a href="https://drive.google.com/file/d/1VT0jILkG0_TLkjeWHV8HIwCcf4ikDoPl/view?usp=sharing">Download my resume </a>
+          <a href="https://www.figma.com/proto/8D9aFE2LFb9D2V1QqGgqcL/CV?node-id=1:3&scaling=min-zoom">
+            See my resume </a>
+          <a href="https://drive.google.com/file/d/1VT0jILkG0_TLkjeWHV8HIwCcf4ikDoPl/view?usp=sharing">
+            Download my resume </a>
           <p> Do not forget to check the update date of the document</p>
         </section>
         <section className="Contact section is-medium">
           <h2>Contact</h2>
           <p>
-            For security reasons i do not show my email and phone number. But if you check my CV there you can find that data.
+            For security reasons i do not show my email and phone number. But if you check my CV 
+            there you can find that data.
             </p>
           <p className="mb-6">
             You can also send me an email directly using this form:
