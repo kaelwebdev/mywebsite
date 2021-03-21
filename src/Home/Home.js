@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './Home.css';
 import imgKael from '../assets/img_kael.png';
 import { useForm, ValidationError } from '@formspree/react';
-import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaTwitter, FaExternalLinkAlt } from "react-icons/fa";
 
 
 function ContactForm() {
@@ -104,6 +104,7 @@ export default class Home extends Component {
       <th><abbr title="Position">Idx</abbr></th>
       <th>Name</th>
       <th>Description</th>
+      <th>Screenshot/video</th>
     </tr>
   </thead>
   <tfoot>
@@ -111,38 +112,45 @@ export default class Home extends Component {
       <th><abbr title="Position">Idx</abbr></th>
       <th>Name</th>
       <th>Description</th>
+      <th>Screenshot/video</th>
     </tr>
   </tfoot>
   <tbody>
     <tr>
       <th>1</th>
-      <td><a href="https://github.com/kaelwebdev/Oharasis" title="Oharasis">Oharasis</a></td>
+      <td><a target="_blank" href="https://github.com/kaelwebdev/Oharasis" title="Oharasis">Oharasis</a></td>
       <td>Web platform for displaying and monitoring student competences and skills.</td>
+      <td className="has-text-centered"><a target="_blank" href="https://drive.google.com/file/d/1rSq6nrCUELe-vkVTu7MbEuZaNs648pJI/view" title="sample"><FaExternalLinkAlt/></a></td>
     </tr>
     <tr>
       <th>2</th>
-      <td><a href="https://github.com/JamesPagani/MyCoachApp" title="My Coach App">My Coach App</a></td>
+      <td><a target="_blank" href="https://github.com/JamesPagani/MyCoachApp" title="My Coach App">My Coach App</a></td>
       <td>Web platform for physical trainers and their clients. Manage or watch your routines.</td>
+      <td className="has-text-centered"><a target="_blank" href="https://drive.google.com/uc?export=view&id=12R-xLXRUq0O6ghuoycoEsuSMYSMQdtxR" alt="screenshot App" width="300" title="sample"><FaExternalLinkAlt/></a></td>
     </tr>
     <tr>
       <th>3</th>
-      <td><a href="https://github.com/kaelwebdev/AirBnB_clone" title="My Coach App">AirBnB clone - Console</a></td>
+      <td><a target="_blank" href="https://github.com/kaelwebdev/AirBnB_clone" title="My Coach App">AirBnB clone - Console</a></td>
       <td>Replica of the famous AirBnb application. It consists of 5 phases. In this first phase, a system was created to manage the application through the command terminal.</td>
+      <td className="has-text-centered"><a target="_blank" href="" title="sample"><FaExternalLinkAlt/></a></td>
     </tr>
     <tr>
       <th>4</th>
       <td>Secure Chat</td>
       <td>Encrypted chat for internal company use.</td>
+      <td className="has-text-centered"></td>
     </tr>
     <tr>
       <th>5</th>
-      <td><a href="https://github.com/JamesPagani/MyCoachApp" title="My Coach App">3D Object Grapher</a></td>
+      <td><a target="_blank" href="https://github.com/JamesPagani/MyCoachApp" title="My Coach App">3D Object Grapher</a></td>
       <td>Small projects that i did a long time ago using graphics computing.</td>
+      <td className="has-text-centered"><a target="_blank" href="" title="sample"><FaExternalLinkAlt/></a></td>
     </tr>
     <tr>
       <th>6</th>
-      <td><a href="https://github.com/kaelwebdev/MediaPlayer" title="My Coach App">Media player</a></td>
+      <td><a target="_blank" href="https://github.com/kaelwebdev/MediaPlayer" title="My Coach App">Media player</a></td>
       <td>My own media player using javascript</td>
+      <td className="has-text-centered"><a target="_blank" href="" title="sample"><FaExternalLinkAlt/></a></td>
     </tr>
     
   </tbody>
