@@ -8,7 +8,14 @@ import { FaGithub, FaLinkedin, FaTwitter, FaExternalLinkAlt } from "react-icons/
 function ContactForm() {
   const [state, handleSubmit] = useForm("mbjqrlod");
   if (state.succeeded) {
-    return <p>Thanks for joining!</p>;
+    return <article class="message is-info">
+    <div class="message-header">
+      <p>Info</p>
+    </div>
+    <div class="message-body">
+      Message sent
+    </div>
+  </article>;
   }
   return (
     <form onSubmit={handleSubmit} className="contactForm" >
@@ -19,6 +26,7 @@ function ContactForm() {
         id="email"
         type="email"
         name="email"
+        placeholder="example@hotmail.com"
       />
       <ValidationError
         prefix="Email"
@@ -227,11 +235,6 @@ export default class Home extends Component {
             </p>
           <div className="contentForm">
             <ContactForm />
-            <form action="?" method="POST">
-            <div className="g-recaptcha" data-sitekey="6LdBG4kaAAAAAHzf-hUuK1yZ7UZvu-CoYtabC17N"></div>
-            <br/>
-            <input type="submit" value="Submit"/>
-            </form>
           </div>
           
         </section>
