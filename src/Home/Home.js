@@ -11,7 +11,7 @@ function ContactForm() {
     return <p>Thanks for joining!</p>;
   }
   return (
-    <form onSubmit={handleSubmit} className="contactForm">
+    <form onSubmit={handleSubmit} className="contactForm" >
       <label htmlFor="email">
         Your Email Address
       </label>
@@ -227,7 +227,13 @@ export default class Home extends Component {
             </p>
           <div className="contentForm">
             <ContactForm />
+            <form action="?" method="POST">
+            <div className="g-recaptcha" data-sitekey="6LdBG4kaAAAAAHzf-hUuK1yZ7UZvu-CoYtabC17N"></div>
+            <br/>
+            <input type="submit" value="Submit"/>
+            </form>
           </div>
+          
         </section>
       </>
     )
