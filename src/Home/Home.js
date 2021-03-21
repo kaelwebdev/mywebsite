@@ -208,9 +208,11 @@ export default class Home extends Component {
         </section>
         <section className="myCurriculumVitae section is-medium">
           <h2>My CV (Curriculum Vitae)</h2>
-          <a href="https://www.figma.com/proto/8D9aFE2LFb9D2V1QqGgqcL/CV?node-id=1:3&scaling=min-zoom">
+          <a target="_blank"
+            href="https://www.figma.com/proto/8D9aFE2LFb9D2V1QqGgqcL/CV?node-id=1:3&scaling=min-zoom">
             See my resume </a>
-          <a href="https://drive.google.com/file/d/1VT0jILkG0_TLkjeWHV8HIwCcf4ikDoPl/view?usp=sharing">
+          <a target="_blank"
+            href="https://drive.google.com/file/d/1VT0jILkG0_TLkjeWHV8HIwCcf4ikDoPl/view?usp=sharing">
             Download my resume </a>
           <p> Do not forget to check the update date of the document</p>
         </section>

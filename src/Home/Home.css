@@ -108,7 +108,7 @@ textarea#message {
 
 button[type="submit"] {
   max-width: 100px;
-  margin: 5px 0px;
+  margin-top: 20px;
   color: white;
   background-color: transparent;
   border: 1px solid white;
