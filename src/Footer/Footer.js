@@ -5,8 +5,9 @@ export default class Footer extends Component {
     return (
       <footer>
         <p>
-          This wbesite is protected under license CC BY-NC-SA 4.0. You can read more in https://creativecommons.org/licenses/by-nc-sa/4.0/
+          This website is protected under license CC BY-NC-SA 4.0. You can read more <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">here</a>
         </p>
+        
       </footer>
     )
   }

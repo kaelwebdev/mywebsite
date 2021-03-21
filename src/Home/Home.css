@@ -1,0 +1,85 @@
+header.breadCrumbs {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+.imgKael {
+  border-radius: 10%;
+}
+
+.AboutMe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.AboutMe h2{
+  width: 100%;
+}
+
+.socialMedia {
+  display: flex;
+  flex-direction: row;
+  padding: 5px 0px;
+}
+
+.socialMedia a {
+  color: white;
+}
+
+.AboutMe p {
+  max-width: 500px;
+}
+
+.contentForm {
+  display: flex;
+  justify-content: center;
+}
+
+form.contactForm {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  align-items: center;
+}
+
+input#email {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 5px;
+  margin: 5px 0px;
+}
+
+textarea#message {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 5px;
+  min-height: 200px;
+  margin: 5px 0px;
+  padding: 10px;
+}
+
+button[type="submit"] {
+  max-width: 100px;
+  margin: 5px 0px;
+  color: white;
+  background-color: transparent;
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+button[type="submit"]:hover {
+  font-weight: bolder;
+  text-shadow: white 0 0 10px;
+  box-shadow: white 0 0 10px;
+  cursor: pointer;
+}
