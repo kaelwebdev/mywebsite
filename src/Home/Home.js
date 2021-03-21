@@ -53,9 +53,9 @@ export default class Home extends Component {
             <h2>About Me</h2>
             <img src={imgKael} className="imgKael" />
             <div className="socialMedia">
-              <a href="https://www.linkedin.com/in/kaelwebdev/"><FaLinkedin title="LinkedIn" className="socialMedia__icon"/></a>
-              <a href="https://github.com/kaelwebdev"><FaGithub title="Github" className="socialMedia__icon" /></a>
-              <a href="https://twitter.com/kaelwebdev"><FaTwitter title="Twitter" className="socialMedia__icon" /></a>
+              <a target="_blank" href="https://www.linkedin.com/in/kaelwebdev/"><FaLinkedin title="LinkedIn" className="socialMedia__icon"/></a>
+              <a target="_blank" href="https://github.com/kaelwebdev"><FaGithub title="Github" className="socialMedia__icon" /></a>
+              <a target="_blank" href="https://twitter.com/kaelwebdev"><FaTwitter title="Twitter" className="socialMedia__icon" /></a>
             </div>
             <p>
               Hi! My name is Carlos Daniel Cortez, but you can call me Kael. I am Mulimedia Engineer, Software Engineer, and Full Stack Web Developer.
