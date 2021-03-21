@@ -46,6 +46,7 @@ function ContactForm() {
         field="message"
         errors={state.errors}
       />
+      <div className="g-recaptcha" data-sitekey="6LdBG4kaAAAAAHzf-hUuK1yZ7UZvu-CoYtabC17N"></div>
       <button type="submit" disabled={state.submitting}>
         Submit
       </button>
@@ -222,7 +223,7 @@ export default class Home extends Component {
           <a target="_blank"
             href="https://drive.google.com/file/d/1VT0jILkG0_TLkjeWHV8HIwCcf4ikDoPl/view?usp=sharing">
             Download my resume </a>
-          <p> Do not forget to check the update date of the document</p>
+          <p> Do not forget to check the update date of the document.</p>
         </section>
         <section className="Contact section is-medium">
           <h2>Contact</h2>
