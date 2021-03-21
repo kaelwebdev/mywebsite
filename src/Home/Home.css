@@ -1,3 +1,13 @@
+.stickyBar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: -2px;
+}
+
+.progress {
+  background-color: red;
+}
+
 header.breadCrumbs {
   display: flex;
   justify-content: flex-end;
@@ -49,6 +59,24 @@ h2 {
 .AboutMe p {
   max-width: 500px;
 }
+/*
+.myCurriculumVitae {
+  display: flex;
+  flexdirection: column;
+}*/
+
+.myCurriculumVitae a{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  max-width: 300px;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px 10px 10px 0px;
+}
 
 .contentForm {
   display: flex;
@@ -61,14 +89,14 @@ form.contactForm {
   width: 300px;
   align-items: center;
 }
-
+/*
 input#email {
   width: 100%;
   max-width: 200px;
   border-radius: 5px;
   margin: 5px 0px;
-}
-
+}*/
+/*
 textarea#message {
   width: 100%;
   max-width: 200px;
@@ -76,7 +104,7 @@ textarea#message {
   min-height: 200px;
   margin: 5px 0px;
   padding: 10px;
-}
+}*/
 
 button[type="submit"] {
   max-width: 100px;
@@ -97,7 +125,7 @@ button[type="submit"]:hover {
 
 .tags {
   max-width: 500px;
-  padding: 5px 0px;
+  padding: 20px 0px;
 }
 
 .table td a {
