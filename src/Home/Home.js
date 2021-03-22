@@ -3,6 +3,7 @@ import './Home.css';
 import imgKael from '../assets/img_kael.png';
 import { useForm, ValidationError } from '@formspree/react';
 import { FaGithub, FaLinkedin, FaTwitter, FaExternalLinkAlt } from "react-icons/fa";
+import Typed from "react-typed";
 
 
 function ContactForm() {
@@ -90,13 +91,35 @@ export default class Home extends Component {
             <a target="_blank" href="https://twitter.com/kaelwebdev">
               <FaTwitter title="Twitter" className="socialMedia__icon" /></a>
           </div>
-          <p>
+          {/* <p>
             Hi! My name is Carlos Daniel Cortez, but you can call me Kael. I am Mulimedia Engineer, 
             Software Engineer, and Full Stack Web Developer.
           </p>
           <p>
             I am passionate about everything related to web development. And I like the frontend and 
             the backend alike.
+          </p> */}
+          <p>
+            <Typed
+                strings={[
+                  `Hi! My name is Carlos Daniel Cortez, but you can call me Kael.
+                  I am Mulimedia Engineer Software Engineer  and Full Stack Web Developer.`
+                ]}
+                startDelay={1000}
+                typeSpeed={60}
+                smartBackspace={true}
+            />
+          </p>
+          <p>
+            <Typed
+                strings={[
+                  `I am passionate about everything related to web development. And I like the frontend,
+                  and the backend alike.`
+                ]}
+                startDelay={17000}
+                typeSpeed={60}
+                smartBackspace={true}
+            />
           </p>
           <div className="tags">
             <span className="tag is-light">React</span>
