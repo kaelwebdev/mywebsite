@@ -23,6 +23,7 @@ yarn-debug.log*
 yarn-error.log*
 
 # dist files
+/dist/
 /dist/*.jpg
 /dist/*.png
 /dist/bundle.js
