@@ -8,7 +8,7 @@ module.exports = {
   devtool: "inline-source-map",
   entry: "./src/index.js",
   output: {
-    filename: "bundle.js",
+    filename: "[name][hash].bundle.js",
     path: path.resolve("./dist"),
   },
   performance: {

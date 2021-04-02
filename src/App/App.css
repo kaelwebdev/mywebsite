@@ -25,11 +25,6 @@ main {
   align-items: center;
 }
 
-.banner {
-  filter: opacity(0.5);
-}
-
-
 nav {
   display: flex;
   justify-content: space-between;

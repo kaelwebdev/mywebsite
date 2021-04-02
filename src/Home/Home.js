@@ -10,11 +10,11 @@ function ContactForm() {
   // domRect = element.getBoundingClientRect();
   const [state, handleSubmit] = useForm("mbjqrlod");
   if (state.succeeded) {
-    return <article class="message is-info">
-    <div class="message-header">
+    return <article className="message is-info">
+    <div className="message-header">
       <p>Info</p>
     </div>
-    <div class="message-body">
+    <div className="message-body">
       Message sent
     </div>
   </article>;
@@ -83,13 +83,13 @@ export default class Home extends Component {
         <ScrollIndicator />
         <section className="AboutMe">
           <h2 className="section_title">About Me</h2>
-          <img src={imgKael} className="imgKael" />
+          <img src={imgKael} width="300px" height="300px" className="imgKael" alt="foto de perfil de @kaelwebdev"/>
           <div className="socialMedia">
-            <a target="_blank" href="https://www.linkedin.com/in/kaelwebdev/">
+            <a rel="noreferrer noopener" target="_blank" href="https://www.linkedin.com/in/kaelwebdev/">
               <FaLinkedin title="LinkedIn" className="socialMedia__icon" /></a>
-            <a target="_blank" href="https://github.com/kaelwebdev">
+            <a  rel="noreferrer noopener"target="_blank" href="https://github.com/kaelwebdev">
               <FaGithub title="Github" className="socialMedia__icon" /></a>
-            <a target="_blank" href="https://twitter.com/kaelwebdev">
+            <a  rel="noreferrer noopener"target="_blank" href="https://twitter.com/kaelwebdev">
               <FaTwitter title="Twitter" className="socialMedia__icon" /></a>
           </div>
           <p className="has-text-centered">
@@ -176,12 +176,12 @@ export default class Home extends Component {
                 <tr>
                   <th>1</th>
                   <td>
-                    <a target="_blank" href="https://github.com/kaelwebdev/Oharasis" title="Oharasis">
+                    <a rel="noreferrer noopener" target="_blank" href="https://github.com/kaelwebdev/Oharasis" title="Oharasis">
                       Oharasis
                     </a>
                   </td>
                   <td>Web platform for displaying and monitoring student competences and skills.</td>
-                  <td className="has-text-centered"><a target="_blank"
+                  <td className="has-text-centered"><a  rel="noreferrer noopener" target="_blank"
                     href="https://drive.google.com/file/d/1rSq6nrCUELe-vkVTu7MbEuZaNs648pJI/view"
                     title="sample"><FaExternalLinkAlt /></a>
                   </td>
@@ -189,20 +189,20 @@ export default class Home extends Component {
                 <tr>
                   <th>2</th>
                   <td>
-                    <a target="_blank" href="https://github.com/JamesPagani/MyCoachApp"
+                    <a rel="noreferrer noopener" target="_blank" href="https://github.com/JamesPagani/MyCoachApp"
                     title="My Coach App">
                     My Coach App</a>
                   </td>
                   <td>Web platform for physical trainers and their clients. Manage or watch your
                      routines.</td>
                   <td className="has-text-centered">
-                    <a target="_blank" href="https://drive.google.com/uc?export=view&id=12R-xLXRUq0O
+                    <a rel="noreferrer noopener" target="_blank" href="https://drive.google.com/uc?export=view&id=12R-xLXRUq0O
                     6ghuoycoEsuSMYSMQdtxR" alt="screenshot App" width="300" title="sample">
                       <FaExternalLinkAlt /></a></td>
                 </tr>
                 <tr>
                   <th>3</th>
-                  <td><a target="_blank" href="https://github.com/kaelwebdev/AirBnB_clone" 
+                  <td><a rel="noreferrer noopener" target="_blank" href="https://github.com/kaelwebdev/AirBnB_clone" 
                     title="My Coach App">AirBnB clone - Console</a>
                   </td>
                   <td>Replica of the famous AirBnb application. It consists of 5 phases. 
@@ -218,16 +218,16 @@ export default class Home extends Component {
                 </tr>
                 <tr>
                   <th>5</th>
-                  <td><a target="_blank" href="https://github.com/JamesPagani/3D-web-object-grapher"
+                  <td><a rel="noreferrer noopener" target="_blank" href="https://github.com/JamesPagani/3D-web-object-grapher"
                     title="My Coach App">3D Object Grapher</a></td>
                   <td>Small projects that i did a long time ago using graphics computing.</td>
-                  <td className="has-text-centered"><a target="_blank" 
+                  <td className="has-text-centered"><a rel="noreferrer noopener" target="_blank" 
                   href="https://drive.google.com/uc?export=view&id=1gtMAX4jFLV6n8jt-6F65SYHVSq15YqF_" 
                   title="sample"><FaExternalLinkAlt /></a></td>
                 </tr>
                 <tr>
                   <th>6</th>
-                  <td><a target="_blank" href="https://github.com/kaelwebdev/MediaPlayer" 
+                  <td><a rel="noreferrer noopener" target="_blank" href="https://github.com/kaelwebdev/MediaPlayer" 
                     title="My Coach App">Media player</a></td>
                   <td>My own media player using javascript</td>
                   <td className="has-text-centered"></td>
@@ -238,10 +238,10 @@ export default class Home extends Component {
         </section>
         <section className="curriculum_vitae_section section is-medium">
           <h2 className="section_title" >My CV (Curriculum Vitae)</h2>
-          <a target="_blank"
+          <a rel="noreferrer noopener" target="_blank"
             href="https://www.figma.com/proto/8D9aFE2LFb9D2V1QqGgqcL/CV?node-id=1:3&scaling=min-zoom">
             See my resume </a>
-          <a target="_blank"
+          <a rel="noreferrer noopener" target="_blank"
             href="https://drive.google.com/file/d/1VT0jILkG0_TLkjeWHV8HIwCcf4ikDoPl/view?usp=sharing">
             Download my resume </a>
           <p className="has-text-centered"> Do not forget to check the update date of the document.</p>

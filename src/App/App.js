@@ -1,13 +1,17 @@
-import React, { Component } from 'react';
+import React, { Component, lazy, Suspense } from 'react';
 import './App.css';
-import Footer from '../Footer/Footer';
-import Home from '../Home/Home';
+const Footer = lazy(() => import(/* webpackPrefetch: true */ '../Footer/Footer'));
+const Home = lazy(() => import(/* webpackPrefetch: true */ '../Home/Home'));
 import { MdNotificationsActive, MdNotifications } from "react-icons/md";
+const Banner = lazy(() => import(/* webpackPrefetch: true */ '../components/Banner/Banner'));
 import banner from '../assets/banner.png';
 
+const renderLoader = () => <button className="button is-primary is-loading" title="loading" type="button">Loading</button>;
 const listNotifications = [
   {id: 1, html: undefined, type: "default", value: "This website looks simple because it is under construction, i have hardly had time to work on this page."},
 ];
+
+
 
 export default class App extends Component {
 
@@ -47,13 +51,20 @@ export default class App extends Component {
           
         </nav>
         <header className="header">
-          <img src={banner} className="banner"></img>
+        <Suspense fallback={renderLoader()}>
+          <Banner src={banner}></Banner>
+        </Suspense>
+          
           
         </header>
         <main>
+        <Suspense fallback={renderLoader()}>
           <Home/>
+        </Suspense>
         </main>
-        <Footer/>
+        <Suspense fallback={renderLoader()}>
+          <Footer/>
+        </Suspense>
       </div>
     );
   }
