@@ -5,20 +5,25 @@
 }
 
 .progress {
-  background-color: red;
+  box-shadow: white 0 0 7px;
 }
 
 header.breadCrumbs {
   display: flex;
   justify-content: flex-end;
   width: 100%;
+  display: none;
 }
+
 h1 {
-  font-size: 36px;
+  font-size: 42px;
+  font-weight: bolder;
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 40px;
+  text-align: center;
+  font-weight: bolder;
 }
 
 .imgKael {
@@ -35,6 +40,7 @@ h2 {
 
 .AboutMe h2{
   width: 100%;
+  text-align: center;
 }
 
 .socialMedia {
@@ -65,7 +71,18 @@ h2 {
   flexdirection: column;
 }*/
 
-.myCurriculumVitae a{
+.portfolio_section {
+  background-color: #e5097f;
+  box-shadow: white 0 0 10px;
+}
+.curriculum_vitae_section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.curriculum_vitae_section a{
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -76,6 +93,15 @@ h2 {
   border-radius: 10px;
   padding: 10px;
   margin: 10px 10px 10px 0px;
+}
+
+.contact_section {
+  background-color: #21c3b0;
+  box-shadow: white 0 0 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .contentForm {
@@ -89,13 +115,11 @@ form.contactForm {
   width: 300px;
   align-items: center;
 }
-/*
-input#email {
-  width: 100%;
-  max-width: 200px;
-  border-radius: 5px;
-  margin: 5px 0px;
-}*/
+
+input#email:hover, input#email:active, input#email:target  {
+  border-color: #e5097f;
+}
+
 /*
 textarea#message {
   width: 100%;

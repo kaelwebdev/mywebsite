@@ -1,6 +1,6 @@
 import React, { Component, useEffect, useState } from 'react';
 import './Home.css';
-import imgKael from '../assets/img_kael.png';
+import imgKael from '../assets/img_kael.jpg';
 import { useForm, ValidationError } from '@formspree/react';
 import { FaGithub, FaLinkedin, FaTwitter, FaExternalLinkAlt } from "react-icons/fa";
 import Typed from "react-typed";
@@ -81,7 +81,7 @@ export default class Home extends Component {
         </header>
         <ScrollIndicator />
         <section className="AboutMe">
-          <h2>About Me</h2>
+          <h2 className="section_title">About Me</h2>
           <img src={imgKael} className="imgKael" />
           <div className="socialMedia">
             <a target="_blank" href="https://www.linkedin.com/in/kaelwebdev/">
@@ -91,14 +91,6 @@ export default class Home extends Component {
             <a target="_blank" href="https://twitter.com/kaelwebdev">
               <FaTwitter title="Twitter" className="socialMedia__icon" /></a>
           </div>
-          {/* <p>
-            Hi! My name is Carlos Daniel Cortez, but you can call me Kael. I am Mulimedia Engineer, 
-            Software Engineer, and Full Stack Web Developer.
-          </p>
-          <p>
-            I am passionate about everything related to web development. And I like the frontend and 
-            the backend alike.
-          </p> */}
           <p>
             <Typed
                 strings={[
@@ -153,9 +145,9 @@ export default class Home extends Component {
 
           </div>
         </section>
-        <section className="Portfolio section is-medium">
-          <h1>Portfolio </h1>
-          <p>I present you some of my projects.</p>
+        <section className="portfolio_section section is-medium odd_section">
+          <h2 className="section_title" >Portfolio </h2>
+          <p className="section_description">I present you some of my projects.</p>
           <div className="table-container">
             <table className="table is-hoverable is-fullwidth">
               <thead>
@@ -238,8 +230,8 @@ export default class Home extends Component {
             </table>
           </div>
         </section>
-        <section className="myCurriculumVitae section is-medium">
-          <h2>My CV (Curriculum Vitae)</h2>
+        <section className="curriculum_vitae_section section is-medium">
+          <h2 className="section_title" >My CV (Curriculum Vitae)</h2>
           <a target="_blank"
             href="https://www.figma.com/proto/8D9aFE2LFb9D2V1QqGgqcL/CV?node-id=1:3&scaling=min-zoom">
             See my resume </a>
@@ -248,9 +240,9 @@ export default class Home extends Component {
             Download my resume </a>
           <p> Do not forget to check the update date of the document.</p>
         </section>
-        <section className="Contact section is-medium">
-          <h2>Contact</h2>
-          <p>
+        <section className="contact_section section is-medium">
+          <h2 className="section_title" >Contact</h2>
+          <p className="section_paragraph">
             For security reasons i do not show my email and phone number. But if you check my CV 
             there you can find that data.
             </p>
