@@ -25,6 +25,9 @@ main {
   align-items: center;
 }
 
+.banner {
+  filter: opacity(0.5);
+}
 
 
 nav {
