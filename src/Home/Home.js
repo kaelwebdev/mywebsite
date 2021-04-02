@@ -7,6 +7,7 @@ import Typed from "react-typed";
 
 
 function ContactForm() {
+  // domRect = element.getBoundingClientRect();
   const [state, handleSubmit] = useForm("mbjqrlod");
   if (state.succeeded) {
     return <article class="message is-info">
@@ -91,7 +92,7 @@ export default class Home extends Component {
             <a target="_blank" href="https://twitter.com/kaelwebdev">
               <FaTwitter title="Twitter" className="socialMedia__icon" /></a>
           </div>
-          <p>
+          <p className="has-text-centered">
             <Typed
                 strings={[
                   `Hi! My name is Carlos Daniel Cortez, but you can call me Kael.
@@ -102,7 +103,7 @@ export default class Home extends Component {
                 smartBackspace={true}
             />
           </p>
-          <p>
+          <p className="has-text-centered">
             <Typed
                 strings={[
                   `I am passionate about everything related to web development. And I like the frontend,
@@ -113,7 +114,7 @@ export default class Home extends Component {
                 smartBackspace={true}
             />
           </p>
-          <div className="tags">
+          <div className="tags is-justify-content-center pl-2">
             <span className="tag is-light">React</span>
             <span className="tag is-light">Angular</span>
             <span className="tag is-light">NodeJS</span>
@@ -145,9 +146,14 @@ export default class Home extends Component {
 
           </div>
         </section>
-        <section className="portfolio_section section is-medium odd_section">
+        <section className="portfolio_section section is-medium odd_section background2">
+          <div className="cube is--rouded"></div>
+          <div className="cube is--rouded"></div>
+          <div className="cube is--rouded"></div>
+          <div className="cube is--rouded"></div>
+          <div className="cube is--rouded"></div>
           <h2 className="section_title" >Portfolio </h2>
-          <p className="section_description">I present you some of my projects.</p>
+          <p className="section_description has-text-centered">I present you some of my projects.</p>
           <div className="table-container">
             <table className="table is-hoverable is-fullwidth">
               <thead>
@@ -238,15 +244,20 @@ export default class Home extends Component {
           <a target="_blank"
             href="https://drive.google.com/file/d/1VT0jILkG0_TLkjeWHV8HIwCcf4ikDoPl/view?usp=sharing">
             Download my resume </a>
-          <p> Do not forget to check the update date of the document.</p>
+          <p className="has-text-centered"> Do not forget to check the update date of the document.</p>
         </section>
-        <section className="contact_section section is-medium">
+        <section className="contact_section section is-medium background">
+          <div className="cube"></div>
+          <div className="cube"></div>
+          <div className="cube"></div>
+          <div className="cube"></div>
+          <div className="cube"></div>
           <h2 className="section_title" >Contact</h2>
-          <p className="section_paragraph">
+          <p className="section_paragraph has-text-centered ">
             For security reasons i do not show my email and phone number. But if you check my CV 
             there you can find that data.
             </p>
-          <p className="mb-6">
+          <p className="mb-6 has-text-centered">
             You can also send me an email directly using this form:
             </p>
           <div className="contentForm">
