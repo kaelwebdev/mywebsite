@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://mywebsite/./src/Footer/Footer.css"],"names":[],"mappings":"AAAA,OACE,UAAW,CACX,cAAiB,CAClB,SAGC,iBAAkB","file":"css/936.mystyles.css","sourcesContent":["footer {\r\n  width: 100%;\r\n  padding: 20px 0px;\r\n}\r\n\r\nfooter p {\r\n  text-align: center;\r\n}"],"sourceRoot":""}

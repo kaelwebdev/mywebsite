@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://mywebsite/./src/components/Banner/Banner.scss"],"names":[],"mappings":"AAAA,QACE,kBAAoB","file":"css/556.mystyles.css","sourcesContent":[".banner {\r\n  filter: opacity(0.5);\r\n}"],"sourceRoot":""}
