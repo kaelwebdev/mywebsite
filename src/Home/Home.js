@@ -1,6 +1,6 @@
 import React, { Component, useEffect, useState } from 'react';
 import './Home.css';
-import imgKael from '../assets/img_kael.jpg';
+import imgKael from '@assets/img_kael.jpg';
 import { useForm, ValidationError } from '@formspree/react';
 import { FaGithub, FaLinkedin, FaTwitter, FaExternalLinkAlt } from "react-icons/fa";
 import Typed from "react-typed";

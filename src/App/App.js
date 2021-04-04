@@ -1,10 +1,11 @@
 import React, { Component, lazy, Suspense } from 'react';
 import './App.css';
-const Footer = lazy(() => import(/* webpackPrefetch: true */ '../Footer/Footer'));
-const Home = lazy(() => import(/* webpackPrefetch: true */ '../Home/Home'));
-import { MdNotificationsActive, MdNotifications } from "react-icons/md";
-const Banner = lazy(() => import(/* webpackPrefetch: true */ '../components/Banner/Banner'));
+const Banner = lazy(() => import(/* webpackPreload: true */ '../components/Banner/Banner'));
 import banner from '../assets/banner.png';
+const Home = lazy(() => import(/* webpackPreload: true */ '../Home/Home'));
+const Footer = lazy(() => import(/* webpackPreload: true */ '../Footer/Footer'));
+import { MdNotificationsActive, MdNotifications } from "react-icons/md";
+
 
 const renderLoader = () => <button className="button is-primary is-loading" title="loading" type="button">Loading</button>;
 const listNotifications = [

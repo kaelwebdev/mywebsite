@@ -1,5 +1,5 @@
 import React from 'react';
-import(/* webpackPrefetch: true */ './Banner.scss');
+import(/* webpackPreload: true */ './Banner.scss');
 
 const Banner = ({src}) => {
   return (

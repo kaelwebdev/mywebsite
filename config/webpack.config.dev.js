@@ -2,23 +2,29 @@ const path = require("path");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
-const TerserPlugin = require('terser-webpack-plugin');
 // const Dotenv = require('dotenv-webpack');
+const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 
 module.exports = {
-  mode: "production",
-  devtool: "source-map",
+  mode: "development",
+  devtool: "inline-source-map",
   entry: "./src/index.js",
   output: {
     filename: "[name].[contenthash].bundle.js",
     assetModuleFilename: 'assets/[hash].[ext]',
     path: path.resolve(__dirname, "../dist"),
-    sourceMapFilename: '[name].[ext].map',
+    sourceMapFilename: 'bundle.js.map',
   },
   performance: {
     maxAssetSize: 1000000,
     maxEntrypointSize: 1000000,
+  },
+  devServer: {
+    hot: true,
+    contentBase: path.resolve("./dist"),
+    compress: true,
+    historyApiFallback: true,
+    port: 8564,
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -30,9 +36,11 @@ module.exports = {
       filename: 'css/mystyles.css'
     }),
     new CleanWebpackPlugin(),
+    new BundleAnalyzerPlugin(),
 //    new Dotenv()
   ],
   resolve: {
+    extensions: ['.js' , '.jsx'],
     alias: {
       '@assets': path.resolve(__dirname, '../src/assets/'),
       '@components': path.resolve(__dirname, '../src/components/'),
@@ -72,12 +80,5 @@ module.exports = {
         type: 'asset/resource',
       },
     ],
-  },
-  optimization: {
-    minimize: true,
-    minimizer: [
-      new CssMinimizerPlugin(),
-      new TerserPlugin()
-    ]
   },
 };
