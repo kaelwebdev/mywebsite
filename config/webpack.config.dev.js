@@ -7,13 +7,12 @@ const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 
 module.exports = {
   mode: "development",
-  devtool: "inline-source-map",
+  devtool: "source-map",
   entry: "./src/index.js",
   output: {
     filename: "[name].[contenthash].bundle.js",
     assetModuleFilename: 'assets/[hash].[ext]',
     path: path.resolve(__dirname, "../dist"),
-    sourceMapFilename: 'bundle.js.map',
   },
   performance: {
     maxAssetSize: 1000000,

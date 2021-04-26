@@ -171,7 +171,6 @@ button[type="submit"]:hover {
   background-size: 400% 400%;
   animation: Gradient 15s ease infinite;
   position: relative;
-  height: 100vh;
   width: 100%;
   overflow: hidden;
   padding:0;
@@ -182,7 +181,6 @@ button[type="submit"]:hover {
   background-size: 400% 400%;
   animation: Gradient 15s ease infinite;
   position: relative;
-  height: 100vh;
   width: 100%;
   overflow: hidden;
   padding:0;
